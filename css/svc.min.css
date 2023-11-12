@@ -1,5 +1,15 @@
+section {
+  display: flex;
+  align-items: center;
+}
+
+
 .container {
-  min-width: 80rem;
+  max-width: 80rem;
+}
+
+.shaded {
+  background: #F2F3F7;
 }
 
 .center-align {
@@ -15,7 +25,8 @@
 }
 
 .hero {
-  min-height: 40rem;
+  min-height: 30rem;
+  background-color: #000;
   background: url('/images/hero-background.jpg') center/cover no-repeat;
 }
 
@@ -24,7 +35,7 @@
 }
 
 .hero h3 {
-  color: #c4b4b4;
+  color: #F2F3F7;
 }
 
 main {
@@ -33,5 +44,20 @@ main {
 
 footer {
   color: #fff;
-  background: linear-gradient(to right, #FF7A7E, #FF47B1);
+  background: linear-gradient(to right, #FF7D7B, #FF1FDB);
+}
+
+a[role="button"] {
+  color: #fff;
+  background-color: #FF7D7B;
+  border: 1px #FF7D7B solid;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 100px;
+}
+
+a[role="button"]:hover {
+  color: #FF7D7B;
+  background-color: #fff;
+  border: 1px #FF1FDB solid;
 }

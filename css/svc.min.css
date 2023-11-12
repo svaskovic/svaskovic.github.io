@@ -1,3 +1,37 @@
 .container {
   min-width: 80rem;
 }
+
+.center-align {
+  text-align: center;
+}
+
+.valign-wrapper {
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+}
+
+.hero {
+  min-height: 40rem;
+  background: url('/images/hero-background.jpg') center/cover no-repeat;
+}
+
+.hero h1 {
+  color: #fff;
+}
+
+.hero h3 {
+  color: #c4b4b4;
+}
+
+main {
+  padding-top: 0px !important;
+}
+
+footer {
+  color: #fff;
+  background: linear-gradient(to right, #FF7A7E, #FF47B1);
+}

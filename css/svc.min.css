@@ -1,4 +1,5 @@
 section {
+  min-height: 30rem;
   display: flex;
   align-items: center;
 }
@@ -6,6 +7,7 @@ section {
 
 .container {
   max-width: 80rem;
+  padding: 0 2rem;
 }
 
 .shaded {
@@ -25,17 +27,47 @@ section {
 }
 
 .hero {
-  min-height: 30rem;
+  min-height: 100vh;
   background-color: #000;
   background: url('/images/hero-background.jpg') center/cover no-repeat;
 }
 
-.hero h1 {
+.hero h1,
+.hero h3 {
   color: #fff;
 }
 
-.hero h3 {
-  color: #F2F3F7;
+.hero-nav {
+  text-align: right;
+}
+
+.hero-nav article {
+  display: inline-block;
+  padding: 50px 100px 25px 100px;
+  background: linear-gradient(to right, rgba(48, 66, 88, 0.05), rgba(48, 66, 88, 0.5));
+}
+
+.hero-nav li {
+  display: block !important;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.hero-nav li hr { 
+  border-color: #FF7D7B;
+  border-width: 0.15em;
+  width: 30%;
+}
+
+.hero-nav li a {
+  color: #9F9FAC;
+  letter-spacing: 2px;
+}
+
+.hero-nav li a:hover {
+  color: #FF7D7B;
+  text-decoration: none;
 }
 
 main {
@@ -49,15 +81,48 @@ footer {
 
 a[role="button"] {
   color: #fff;
-  background-color: #FF7D7B;
-  border: 1px #FF7D7B solid;
+  background-color: #6439C3;
   padding: 10px 30px;
-  border: none;
+  border: 1px #6439C3 solid;
   border-radius: 100px;
 }
 
 a[role="button"]:hover {
-  color: #FF7D7B;
+  color: #6439C3;
   background-color: #fff;
-  border: 1px #FF1FDB solid;
+  border: 1px #6439C3 solid;
+}
+
+.box-img {
+  width: 6em;
+  padding-bottom: 25px;
+}
+
+footer li {
+  color: #fff;
+  list-style: none;
+  font-size: 1.25rem;
+}
+
+footer li a {
+  color: #fff;
+}
+
+footer li a:hover {
+  color: #F7CAF0;
+  text-decoration: none;
+}
+
+.logos {
+  margin-bottom: 0px !important;
+  
+}
+
+.logos img {
+  filter: grayscale(10);
+  transition: filter 0.3s ease;
+}
+
+.logos img:hover {
+  filter: grayscale(0);
 }

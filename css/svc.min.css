@@ -1,17 +1,47 @@
-section {
-  min-height: 30rem;
-  display: flex;
-  align-items: center;
+.colors {
+  color: #6439c3;
+  color: #ff1fdb;
+  color: #d86f6c;
+  color: #ff7f7b;
+  color: #00cc97;
+  color: #6f7898;
+  color: #304258;
+  color: #0af2f1;
+  color: #50a6c6;
+  color: #1671f8;
 }
 
+nav {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+nav .vg-logo {
+  max-height: 1.5rem;
+}
+
+nav li a {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 550;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  color: #304258;
+}
+
+nav li a:hover {
+  color: #6439c3;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem;
+}
 
 .container {
   max-width: 80rem;
   padding: 0 2rem;
-}
-
-.shaded {
-  background: #F2F3F7;
 }
 
 .center-align {
@@ -27,18 +57,39 @@ section {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   background-color: #000;
-  background: url('/images/hero-background.jpg') center/cover no-repeat;
+  margin-bottom: 0px !important;
 }
 
-.hero h1,
-.hero h3 {
+.hero h1 {
   color: #fff;
+  font-size: 4rem;
+}
+
+.hero h1 span {
+  color: #6439C3;
+}
+
+span {
+  color: #ff1fdb;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 120%;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  color: #6f7898;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-bottom: 1rem !important;
 }
 
 .hero-nav {
-  text-align: right;
+  text-align: center;
 }
 
 .hero-nav article {
@@ -54,7 +105,7 @@ section {
   padding: 5px 0;
 }
 
-.hero-nav li hr { 
+.hero-nav li hr {
   border-color: #FF7D7B;
   border-width: 0.15em;
   width: 30%;
@@ -63,9 +114,11 @@ section {
 .hero-nav li a {
   color: #9F9FAC;
   letter-spacing: 2px;
+  font-size: 0.75rem;
 }
 
-.hero-nav li a:hover {
+.hero-nav li a:hover,
+.hero-nav li a:link {
   color: #FF7D7B;
   text-decoration: none;
 }
@@ -98,6 +151,22 @@ a[role="button"]:hover {
   padding-bottom: 25px;
 }
 
+.logos {
+  background: #F2F3F7;
+}
+
+.logos img {
+  width: 8rem;
+  filter: grayscale(10);
+  transition: filter 0.3s ease;
+  opacity: 0.4;
+}
+
+.logos img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
 footer li {
   color: #fff;
   list-style: none;
@@ -113,16 +182,7 @@ footer li a:hover {
   text-decoration: none;
 }
 
-.logos {
-  margin-bottom: 0px !important;
-  
-}
-
-.logos img {
-  filter: grayscale(10);
-  transition: filter 0.3s ease;
-}
-
-.logos img:hover {
-  filter: grayscale(0);
+footer .copyright {
+  padding-left: 15px;
+  padding-bottom: 20px;
 }

@@ -73,6 +73,26 @@ span {
   color: #ff1fdb;
 }
 
+h1 span {
+  display: inline-block;
+  animation: cursorAnimation 2s infinite;
+  opacity: 0;
+}
+
+@keyframes cursorAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 article {
   display: flex;
   flex-direction: column;
@@ -112,11 +132,20 @@ footer li {
 }
 
 footer li a {
+  display: flex;
+  align-items: center;
   color: #fff;
+  line-height: 1;
+}
+
+footer li a i {
+  line-height: 1.2rem;
+  vertical-align: middle;
+  margin: 0.5rem;
 }
 
 footer li a:hover {
-  color: #d86f6c;
+  color: #ff1fdb;
   text-decoration: none;
 }
 

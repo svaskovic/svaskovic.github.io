@@ -67,6 +67,7 @@ section {
 .hero a[role="button"]:hover {
   background: linear-gradient(to right, #d86f6c, #ff1fdb);
   border: none;
+  margin: 1px; /* since the border is gone */
 }
 
 span {
@@ -172,19 +173,4 @@ footer li a:hover {
 footer .copyright {
   padding-left: 15px;
   padding-bottom: 20px;
-}
-
-.logos {
-  background: #00cc97;
-}
-
-.logos img {
-  width: 8rem;
-  transition: filter 0.3s ease;
-  opacity: 0.75;
-}
-
-.logos img:hover {
-  filter: grayscale(0);
-  opacity: 1;
 }

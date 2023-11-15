@@ -109,17 +109,17 @@ p.tags {
 }
 
 p.tags kbd {
-  background-color: rgba(27, 40, 50, 0);
-  border: 1px #1B2832 solid;
+  background-color: rgba(16, 149, 193, 0);
+  border: 1px #1095C1 solid;
   border-radius: 5rem;
-  color: #1B2832;
+  color: #1095C1;
   font-weight: normal;
   font-size: 0.75rem;
   margin-right: .25rem;
 }
 
 p.tags kbd:hover {
-  background-color: rgba(27, 40, 50, 1);
+  background-color: rgba(16, 149, 193, 1);
   color: #fff;
 }
 

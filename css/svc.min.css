@@ -10,34 +10,14 @@
   color: #50a6c6;
   color: #1671f8;
   color: #f2f3f7;
-
 }
 
 body {
-  background: url('/images/hero-img1.jpg') center/cover no-repeat fixed;
-}
-
-nav {
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: #fff;
+  background: url('/images/hero-img4.jpg') center/cover no-repeat fixed;
 }
 
 .vg-logo {
   height: 2rem;
-}
-
-nav li a {
-  text-transform: uppercase;
-  font-size: 0.8rem;
-  font-weight: 550;
-  padding-left: 1.2rem;
-  padding-right: 1.2rem;
-  color: #304258;
-}
-
-nav li a:hover {
-  color: #6439c3;
 }
 
 section {
@@ -46,14 +26,11 @@ section {
   margin: 0;
 }
 
-.section-img {
-  width: 100%;
-  height: 100%;
-  background-color: none;
-}
-
-.section-text {
-  min-height: 50vh;
+section .section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60vh;
   padding: 3rem;
   background-color: #fff;
 }
@@ -66,21 +43,13 @@ section {
   padding: 0;
 }
 
-.center-align {
-  text-align: center;
-}
-
-.valign-wrapper {
-  align-items: center;
-}
-
 .logo {
   height: 70px;
 }
 
 .hero {
   min-height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.8);
   margin-bottom: 0px !important;
   text-align: center;
 }
@@ -88,26 +57,37 @@ section {
 .hero h1 {
   color: #fff;
   font-size: 4rem;
+  margin-bottom: 1.2rem;
 }
 
-.hero h1 span {
-  color: #6439C3;
+.hero .container li {
+  display: inline-block;
 }
 
-h5 {
-  font-size: 0.5rem;
-  padding: 0;
-  margin: 0;
-  text-transform: uppercase;
-  color: #6439C3;
+.hero a[role="button"] {
+  background-color: rgba(255, 31, 219, 0);
+  border-color: #fff;
+  border-radius: 100rem;
+  color: #fff;
+  width: 8rem;
+  font-size: 0.8rem;
+}
+
+.hero a[role="button"]:hover {
+  background: linear-gradient(to right, #d86f6c, #ff1fdb);
+  border: none;
 }
 
 span {
   color: #ff1fdb;
 }
 
+.grid {
+  grid-column-gap: 0;
+}
+
 h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   line-height: 120%;
   margin-bottom: 1rem;
 }
@@ -116,99 +96,18 @@ h4 {
   color: #6f7898;
   text-transform: uppercase;
   font-size: 0.7rem;
-  margin-bottom: 1rem !important;
-}
-
-.hero-nav {
-  text-align: center;
-}
-
-.hero-nav article {
-  display: inline-block;
-  padding: 50px 100px 25px 100px;
-  background: linear-gradient(to right, rgba(48, 66, 88, 0.05), rgba(48, 66, 88, 0.5));
-}
-
-.hero-nav li {
-  display: block !important;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 5px 0;
-}
-
-.hero-nav li hr {
-  border-color: #FF7D7B;
-  border-width: 0.15em;
-  width: 30%;
-}
-
-.hero-nav li a {
-  color: #9F9FAC;
-  letter-spacing: 2px;
-  font-size: 0.75rem;
-}
-
-.hero-nav li a:hover,
-.hero-nav li a:link {
-  color: #FF7D7B;
-  text-decoration: none;
-}
-
-main {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
+  margin-bottom: 1rem;
 }
 
 footer {
   color: #fff;
-  background: #000;
-}
-
-a[role="button"] {
-  color: #fff;
-  background-color: #6439C3;
-  padding: 10px 30px;
-  border: 1px #6439C3 solid;
-  border-radius: 100px;
-}
-
-a[role="button"]:hover {
-  color: #6439C3;
-  background-color: #fff;
-  border: 1px #6439C3 solid;
-}
-
-.mission {}
-
-.services {
-  background-color: rgba(0, 0, 0, 1);
-  min-height: 30vh;
-  padding: 5rem;
-}
-
-.logos {}
-
-.logos img {
-  width: 8rem;
-  transition: filter 0.3s ease;
-  filter:
-    grayscale(100);
-  opacity: 0.3;
-}
-
-.logos img:hover {
-  filter: grayscale(0);
-  opacity: 1;
-}
-
-footer{
   background-color: rgba(0, 0, 0, 0.9);
 }
 
 footer li {
   color: #fff;
   list-style: none;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 footer li a {
@@ -216,7 +115,7 @@ footer li a {
 }
 
 footer li a:hover {
-  color: #F7CAF0;
+  color: #d86f6c;
   text-decoration: none;
 }
 
@@ -225,14 +124,17 @@ footer .copyright {
   padding-bottom: 20px;
 }
 
-hr {
-  border-color: #d86f6c !important;
-  border-width: 0.2rem;
-  width: 2rem;
-  padding-bottom: 1.5rem;
+.logos {
+  background: #00cc97;
 }
 
+.logos img {
+  width: 8rem;
+  transition: filter 0.3s ease;
+  opacity: 0.75;
+}
 
-.grid {
-  grid-column-gap: 0;
+.logos img:hover {
+  filter: grayscale(0);
+  opacity: 1;
 }

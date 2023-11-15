@@ -130,6 +130,7 @@ p.tags kbd:hover {
 
 h2 {
   font-size: 2rem;
+  text-transform: uppercase;
   line-height: 120%;
   margin-bottom: 1rem;
 }

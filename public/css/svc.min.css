@@ -13,7 +13,7 @@
 }
 
 body {
-  background: url('/images/hero-img4.jpg') center/cover no-repeat fixed;
+  background: url('/public/images/hero-img4.jpg') center/cover no-repeat fixed;
 }
 
 .vg-logo {
@@ -51,6 +51,11 @@ section {
   margin-bottom: 1.2rem;
 }
 
+.hero h4 {
+  color: rgba(255, 255, 255, 1);
+  margin: 0 0 2.5rem 0;
+}
+
 .hero .container li {
   display: inline-block;
 }
@@ -67,7 +72,8 @@ section {
 .hero a[role="button"]:hover {
   background: linear-gradient(to right, #d86f6c, #ff1fdb);
   border: none;
-  margin: 1px; /* since the border is gone */
+  margin: 1px;
+  /* since the border is gone */
 }
 
 span {

@@ -104,7 +104,7 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 60vh;
+  min-height: 75vh;
   border-radius: 0;
   margin: 0;
   padding: 3rem;
@@ -113,6 +113,10 @@ article {
 
 p.tags {
   line-height: 2.3rem;
+}
+
+mark {
+  background-color: #ff1fdb
 }
 
 p.tags kbd {
@@ -141,11 +145,11 @@ h2 {
   margin-bottom: 1rem;
 }
 
-h4 {
+h3 {
   color: #6f7898;
   text-transform: uppercase;
   font-size: 0.7rem;
-  margin-bottom: 1rem;
+  margin: 0 0 20px 0;
 }
 
 footer {
@@ -180,4 +184,24 @@ footer li a:hover {
 footer .copyright {
   padding-left: 15px;
   padding-bottom: 20px;
+}
+
+.bullet_smartmeter {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.bullet_smartmeter img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.big-text {
+  font-size: 1.2rem;
+}
+
+.super-big-text {
+  font-size: 1.8rem;
 }

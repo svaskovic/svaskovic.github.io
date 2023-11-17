@@ -186,8 +186,9 @@ footer .copyright {
   padding-bottom: 20px;
 }
 
-.eng_bullets {
+.eng_bullets li {
   list-style-type: none;
+  font-size: 0.75rem;
 }
 
 .eng_bullets img {

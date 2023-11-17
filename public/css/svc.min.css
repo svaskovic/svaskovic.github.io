@@ -186,13 +186,13 @@ footer .copyright {
   padding-bottom: 20px;
 }
 
-.bullet_smartmeter {
+.eng_bullets {
   list-style-type: none;
   text-transform: uppercase;
   font-size: 0.8rem;
 }
 
-.bullet_smartmeter img {
+.eng_bullets img {
   width: 1.2rem;
   height: 1.2rem;
   margin-right: 1rem;

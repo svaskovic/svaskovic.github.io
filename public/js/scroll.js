@@ -2,7 +2,7 @@
 document.getElementById('learn-more-btn').addEventListener('click', function (event) {
   event.preventDefault();
 
-  var targetSection = document.getElementById('our-mission');
+  var targetSection = document.getElementById('learn-more');
 
   // Scroll to the target section with a slow scroll animation
   scroll({

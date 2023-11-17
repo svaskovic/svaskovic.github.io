@@ -205,3 +205,7 @@ footer .copyright {
 .super-big-text {
   font-size: 1.8rem;
 }
+
+.super-big-text span {
+  color: #50a6c6;
+}
